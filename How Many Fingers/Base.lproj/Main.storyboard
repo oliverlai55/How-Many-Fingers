@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="How_Many_Fingers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How Many Finger?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch9-A4-gTv">
+                                <rect key="frame" x="226" y="30" width="150" height="22"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many fingers do you think I am holding up?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-cF-4Lt">
+                                <rect key="frame" x="117" y="102" width="366" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJf-4z-e3p">
+                                <rect key="frame" x="260" y="223" width="80" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="fs7-7y-LKV"/>
+                                    <constraint firstAttribute="height" constant="50" id="zeC-fB-jXv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-we-dUa">
+                                <rect key="frame" x="279" y="403" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-iF-Eea">
+                                <rect key="frame" x="279" y="323" width="43" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jY3-1X-l9E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m7p-cF-4Lt" firstAttribute="top" secondItem="Ch9-A4-gTv" secondAttribute="bottom" constant="50" id="508-n5-1S7"/>
+                            <constraint firstItem="Ch9-A4-gTv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="55y-K9-C1A"/>
+                            <constraint firstItem="wJf-4z-e3p" firstAttribute="top" secondItem="m7p-cF-4Lt" secondAttribute="bottom" constant="100" id="7v6-9z-aOP"/>
+                            <constraint firstItem="IsR-iF-Eea" firstAttribute="centerX" secondItem="wJf-4z-e3p" secondAttribute="centerX" id="9rZ-7p-cic"/>
+                            <constraint firstItem="m7p-cF-4Lt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aqj-xL-4Qn"/>
+                            <constraint firstItem="8ge-we-dUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EeU-Lh-VOC"/>
+                            <constraint firstItem="8ge-we-dUa" firstAttribute="top" secondItem="IsR-iF-Eea" secondAttribute="bottom" constant="50" id="WVT-bY-Cte"/>
+                            <constraint firstItem="m7p-cF-4Lt" firstAttribute="leading" secondItem="Ch9-A4-gTv" secondAttribute="leading" id="fef-av-BYW"/>
+                            <constraint firstItem="IsR-iF-Eea" firstAttribute="top" secondItem="wJf-4z-e3p" secondAttribute="bottom" constant="50" id="qaz-nt-lnN"/>
+                            <constraint firstItem="wJf-4z-e3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="svh-ky-ltd"/>
+                            <constraint firstItem="Ch9-A4-gTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJf-ox-38X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fef-av-BYW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="8ge-we-dUa" id="ZvN-lS-nVL"/>
+                        <outlet property="userGuessTextField" destination="wJf-4z-e3p" id="0JO-r9-Rp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="462"/>
+        </scene>
+    </scenes>
+</document>
